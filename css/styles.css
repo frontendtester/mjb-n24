@@ -1,11 +1,18 @@
 /* GLOBAL */
-* {
-  box-sizing: border-box;
+:root {
+  --accent-color: #7296ec;
 }
 
 html {
+  box-sizing: border-box;
   height: 100%;
   scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
@@ -29,7 +36,7 @@ img {
 
 /* OUTLINE STYLES */
 *:focus {
-  outline: 2px dashed #7296ec;
+  outline: 2px dashed var(--accent-color);
   outline-offset: 3px;
 }
 
@@ -62,7 +69,7 @@ img {
 }
 
 .button-primary {
-  background-color: #7296ec;
+  background-color: var(--accent-color);
   color: #fff;
 }
 
@@ -219,7 +226,7 @@ img {
 }
 
 .sitenav-link:hover {
-  color: #7296ec;
+  color: var(--accent-color);
 }
 
 .sitenav-link:active {
@@ -278,7 +285,7 @@ img {
 }
 
 .article-card-link:hover {
-  color: #7296ec;
+  color: var(--accent-color);
 }
 
 .article-card-link:active {
@@ -400,7 +407,7 @@ img {
 }
 
 .article-card-horizontal-link:hover {
-  color: #7296ec;
+  color: var(--accent-color);
 }
 
 .article-card-horizontal-link:active {
@@ -513,7 +520,7 @@ img {
 }
 
 .sidebar-news-card-link:hover {
-  color: #7296ec;
+  color: var(--accent-color);
 }
 
 .sidebar-news-card-link:active {
