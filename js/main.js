@@ -6,3 +6,8 @@ if (elModalClose) {
     elModal.classList.remove('modal-open');
   });
 }
+
+// 30 soniyadan keyin modalni ko'rsati -> modal + modal-open
+setTimeout(function () {
+  elModal.classList.add('modal-open');
+}, 30000);
